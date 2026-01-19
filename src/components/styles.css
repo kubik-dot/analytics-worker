@@ -1,0 +1,73 @@
+.stats-container {
+  max-width: 800px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.stats-container header {
+  margin-bottom: 20px;
+}
+
+.stats-container .header-icon {
+  font-size: 36px;
+  margin-right: 10px;
+}
+
+.stats-container .header-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stat-row label {
+  font-size: 18px;
+  font-weight: bold;
+  width: 30%;
+  text-align: right;
+}
+
+.stat-row .value {
+  width: 60%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.stat-row .percentage {
+  width: 10%;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stat-row .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+  margin: 20px 0;
+}
+
+.chart {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    max-width: 100%;
+  }
+  .stat-row {
+    flex-direction: column;
+  }
+  .stat-row label, .stat-row .value, .stat-row .percentage {
+    width: 100%;
+    text-align: left;
+  }
+}
